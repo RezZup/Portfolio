@@ -44,7 +44,9 @@ jobs:
         with:
           args: >-
             --verbose --no-progress --include-mail=false
+            --exclude "https://rezzup.github.io/Portfolio/"
             --exclude "https://rezzup.github.io/Portfolio-/"
+            --exclude "https://www.linkedin.com/in/gauravrajbhar00"
             "**/*.html" "**/*.md"
           fail: true
         env:
