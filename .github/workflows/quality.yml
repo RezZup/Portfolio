@@ -43,7 +43,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
-            --verbose --no-progress --exclude-mail
+            --verbose --no-progress --include-mail=false
             --exclude "https://rezzup.github.io/Portfolio-/"
             "**/*.html" "**/*.md"
           fail: true
