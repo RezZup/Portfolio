@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Lost on the mountain · Gaurav Rajbhar</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070a'/%3E%3Ccircle cx='16' cy='17' r='8' fill='%23e0231c'/%3E%3Crect x='4' y='8' width='24' height='2.6' fill='%23dfe7e0'/%3E%3Crect x='7' y='13' width='18' height='2' fill='%23dfe7e0'/%3E%3C/svg%3E">
+<style>
+  :root{ --ink:#05070a; --bone:#dfe7e0; --dim:#aab4ad; --muted:#78837c; --vermilion:#e0231c; }
+  *{ box-sizing:border-box; margin:0; }
+  body{
+    min-height:100vh; background:var(--ink); color:var(--bone);
+    font-family:system-ui,-apple-system,'Helvetica Neue',sans-serif; font-weight:300;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    -webkit-font-smoothing:antialiased; overflow:hidden;
+  }
+  body::before{
+    content:''; position:fixed; inset:0; pointer-events:none;
+    background:radial-gradient(60% 50% at 50% 30%, rgba(224,35,28,.10), transparent 65%),
+               radial-gradient(125% 95% at 50% 42%, transparent 40%, rgba(2,4,6,.6) 100%);
+  }
+  main{ position:relative; padding:32px; max-width:560px; }
+  .moon{ width:84px; height:84px; margin:0 auto 28px; }
+  .jp{ font-size:13px; letter-spacing:.5em; color:var(--dim); }
+  .code{ font-size:clamp(72px,18vw,120px); line-height:1; font-weight:200; letter-spacing:-.02em; margin:14px 0 6px; }
+  .code b{ font-weight:200; color:var(--vermilion); }
+  h1{ font-size:15px; font-weight:400; letter-spacing:.28em; text-transform:uppercase; color:var(--dim); margin-bottom:16px; }
+  p{ font-size:14px; line-height:1.7; color:#9aa5a0; max-width:40ch; margin:0 auto 34px; }
+  a{
+    display:inline-block; padding:13px 30px; border:1px solid rgba(223,231,224,.22);
+    font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--bone); text-decoration:none; transition:border-color .3s, background .3s;
+  }
+  a:hover{ border-color:var(--vermilion); background:rgba(224,35,28,.12); }
+  a:focus-visible{ outline:1.5px solid var(--vermilion); outline-offset:3px; }
+  .rule{ width:56px; height:1px; background:rgba(223,231,224,.18); margin:0 auto 26px; }
+</style>
+</head>
+<body>
+<main>
+  <svg class="moon" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="30" fill="#e0231c" opacity=".9"/>
+    <rect x="14" y="30" width="72" height="4" fill="#dfe7e0"/>
+    <rect x="22" y="44" width="56" height="3" fill="#dfe7e0" opacity=".85"/>
+    <rect x="30" y="34" width="4" height="40" fill="#dfe7e0" opacity=".75"/>
+    <rect x="66" y="34" width="4" height="40" fill="#dfe7e0" opacity=".75"/>
+  </svg>
+  <div class="jp">道に迷う</div>
+  <div class="code">4<b>0</b>4</div>
+  <div class="rule"></div>
+  <h1>Lost on the mountain</h1>
+  <p>The path you followed ends in fog. This page doesn't exist — but the temple is still lit, just back up the stairs.</p>
+  <a href="/Portfolio/">Return to the gate</a>
+</main>
+</body>
+</html>

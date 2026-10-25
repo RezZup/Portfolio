@@ -1,0 +1,51 @@
+name: quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  html-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse index.html and 404.html
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          for f in ("index.html", "404.html"):
+              HTMLParser().feed(open(f, encoding="utf-8").read())
+              print(f"{f}: parses ok")
+          PY
+
+      - name: Check every local asset reference exists
+        run: |
+          python3 - <<'PY'
+          import os, re
+          html = open("index.html", encoding="utf-8").read()
+          # strip HTML comments first (the résumé button lives in one on purpose)
+          html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+          refs = re.findall(r'(?:src|href)="((?!https?:|mailto:|data:|#|/)[^"]+)"', html)
+          missing = [r for r in sorted(set(refs)) if not os.path.exists(r)]
+          if missing:
+              print("MISSING LOCAL ASSETS:", *missing, sep="\n  ")
+              raise SystemExit(1)
+          print(f"all {len(set(refs))} local references resolve")
+          PY
+
+      - name: Broken link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose --no-progress --exclude-mail
+            --exclude "https://rezzup.github.io/Portfolio-/"
+            "**/*.html" "**/*.md"
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
