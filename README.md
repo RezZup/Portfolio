@@ -1,6 +1,6 @@
 <div align="center">
 
-![Gaurav Rajbhar — Portfolio](assets/kage-preview.webp)
+![Gaurav Rajbhar — Portfolio](assets/portfolio-preview.webp)
 
 # Gaurav Rajbhar — Portfolio
 
@@ -21,7 +21,7 @@ Software Engineer · Full Stack · AI/ML
 
 ## ✨ What this is
 
-A single-page portfolio built as a five-chapter night walk through a fictional Kyoto mountain temple (**Kage** — 影, *shadow*). The environment is a fixed full-viewport Three.js scene; scrolling drives one continuous camera path, so every section — About, Projects, Skills, Honours, Credentials, Contact — arrives as a newly composed shot rather than a page jump.
+A single-page portfolio built as a five-chapter night walk through a Kyoto mountain temple. The environment is a fixed full-viewport Three.js scene; scrolling drives one continuous camera path, so every section — About, Projects, Skills, Honours, Credentials, Contact — arrives as a newly composed shot rather than a page jump.
 
 ## 🎬 Features
 
@@ -38,7 +38,7 @@ A single-page portfolio built as a five-chapter night walk through a fictional K
 ```
 ├── index.html                  # the entire site (markup + styles + scene code)
 ├── assets/
-│   └── kage-preview.webp       # OpenGraph / social sharing banner
+│   └── portfolio-preview.webp  # OpenGraph / social sharing banner
 ├── secret-pathways-assets/
 │   ├── three.min.js            # Three.js runtime (local)
 │   ├── fonts.css               # self-hosted fonts
@@ -73,7 +73,7 @@ Deployed with **GitHub Pages**:
 
 - **Résumé button** — drop your PDF at `assets/Gaurav-Rajbhar-Resume.pdf`, then uncomment the marked block in the Contact section of `index.html`
 - **Project previews** — the project cards accept preview imagery inside each `card-fr` frame
-- **Social preview image** — replace `assets/kage-preview.webp` (keep the filename)
+- **Social preview image** — replace `assets/portfolio-preview.webp` (keep the filename)
 
 ## 🙏 Credits
 
