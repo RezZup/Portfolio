@@ -46,6 +46,7 @@ jobs:
             --verbose --no-progress --include-mail=false
             --exclude "https://rezzup.github.io/Yokoso/"
             --exclude "https://www.linkedin.com/in/gauravrajbhar00"
+            --exclude "https://drive.google.com/"
             "**/*.html" "**/*.md"
           fail: true
         env:

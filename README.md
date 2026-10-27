@@ -10,8 +10,8 @@ Software Engineer · Full Stack · AI/ML
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9a24a)](LICENSE)
 [![Deploy: GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-e0231c)](#-deployment)
-[![Last commit](https://img.shields.io/github/last-commit/RezZup/Portfolio)](https://github.com/RezZup/Portfolio/commits/main)
-[![quality](https://github.com/RezZup/Portfolio/actions/workflows/quality.yml/badge.svg)](https://github.com/RezZup/Portfolio/actions/workflows/quality.yml)
+[![Last commit](https://img.shields.io/github/last-commit/RezZup/Yokoso)](https://github.com/RezZup/Yokoso/commits/main)
+[![quality](https://github.com/RezZup/Yokoso/actions/workflows/quality.yml/badge.svg)](https://github.com/RezZup/Yokoso/actions/workflows/quality.yml)
 
 [**Live site →**](#-deployment) &nbsp;·&nbsp; [GitHub](https://github.com/RezZup) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/gauravrajbhar00) &nbsp;·&nbsp; [Email](mailto:Gauravrajbhar2115@gmail.com)
 
@@ -55,8 +55,8 @@ A single-page portfolio built as a five-chapter night walk through a Kyoto mount
 Any static server works — no build step:
 
 ```bash
-git clone https://github.com/RezZup/Portfolio.git
-cd Portfolio
+git clone https://github.com/RezZup/Yokoso.git
+cd Yokoso
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
@@ -67,17 +67,15 @@ Deployed with **GitHub Pages**:
 
 1. Repo → **Settings → Pages**
 2. Source: *Deploy from a branch* → Branch: `main`, folder: `/ (root)`
-3. The site goes live at `https://rezzup.github.io/Portfolio/`
+3. The site goes live at `https://rezzup.github.io/Yokoso/`
 
 ## 📝 Customizing
 
-- **Résumé button** — drop your PDF at `assets/Gaurav-Rajbhar-Resume.pdf`, then uncomment the marked block in the Contact section of `index.html`
+- **Résumé button** — currently links to Google Drive. To use a local PDF instead, drop it at `assets/Gaurav-Rajbhar-Resume.pdf` and update the `href` in the Contact section of `index.html`
 - **Project previews** — the project cards accept preview imagery inside each `card-fr` frame
 - **Social preview image** — replace `assets/portfolio-preview.webp` (keep the filename)
 
 ## 🙏 Credits
-
-- Template/design: [Kage by MengTo](https://github.com/MengTo/kage)
 - Smooth scrolling: [Lenis](https://github.com/darkroomengineering/lenis)
 - Rendering: [Three.js](https://threejs.org/)
 
